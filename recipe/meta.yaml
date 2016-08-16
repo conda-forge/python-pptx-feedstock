@@ -13,7 +13,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -47,6 +47,7 @@ test:
 about:
   home: http://github.com/scanny/python-pptx
   license: MIT
+  license_file: LICENSE
   summary: 'Generate and manipulate Open XML PowerPoint (.pptx) files'
 
 extra:

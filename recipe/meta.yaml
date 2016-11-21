@@ -1,7 +1,7 @@
 {%set name = "python-pptx" %}
-{%set version = "0.5.8" %}
+{%set version = "0.6.1" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "de591ece301d750cc22e8154716a6d6b643cd99e82451b5cb3e799c8e07d6a4d" %}
+{%set hash_val = "aca879ebd38a7f9d18fc4e8b25f965096a72842c8810df535e0ecbf3e7c019f0" %}
 
 package:
   name: {{ name }}
@@ -38,7 +38,6 @@ test:
     - pptx.oxml
     - pptx.oxml.chart
     - pptx.oxml.dml
-    - pptx.oxml.parts
     - pptx.oxml.shapes
     - pptx.parts
     - pptx.shapes
@@ -48,8 +47,12 @@ about:
   home: http://github.com/scanny/python-pptx
   license: MIT
   license_file: LICENSE
+  license_family: MIT
   summary: 'Generate and manipulate Open XML PowerPoint (.pptx) files'
+  dev_url: http://github.com/scanny/python-pptx
+  doc_url: https://python-pptx.readthedocs.io
 
 extra:
   recipe-maintainers:
     - pmlandwehr
+    - synapticarbors

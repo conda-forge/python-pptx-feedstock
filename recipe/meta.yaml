@@ -1,7 +1,7 @@
 {%set name = "python-pptx" %}
-{%set version = "0.6.4" %}
+{%set version = "0.6.5" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "8c07121ea65302d39f67561ecf6826c1673d9ef6c97fc90e70da8ca233dd33b8" %}
+{%set hash_val = "67926906d088e28f6ad2174f1c6512c4a3507aa9cc2b252cb2fa9698b0588c86" %}
 
 package:
   name: {{ name }}

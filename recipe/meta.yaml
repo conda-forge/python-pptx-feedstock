@@ -1,7 +1,7 @@
 {%set name = "python-pptx" %}
-{%set version = "0.6.5" %}
+{%set version = "0.6.6" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "67926906d088e28f6ad2174f1c6512c4a3507aa9cc2b252cb2fa9698b0588c86" %}
+{%set hash_val = "b7508d6ab2954854b6efeb2ffc2653ff0e8185fb314df6c8673c534b0caeed50" %}
 
 package:
   name: {{ name }}
@@ -13,7 +13,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:

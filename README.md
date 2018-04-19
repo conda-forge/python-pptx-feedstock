@@ -14,12 +14,15 @@ Summary: Generate and manipulate Open XML PowerPoint (.pptx) files
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/python-pptx-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/python-pptx-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/python-pptx-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/python-pptx-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-pptx/badges/version.svg)](https://anaconda.org/conda-forge/python-pptx)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-pptx/badges/downloads.svg)](https://anaconda.org/conda-forge/python-pptx)
+[![Conda Recipe](https://img.shields.io/badge/recipe-python--pptx-green.svg)](https://anaconda.org/conda-forge/python-pptx)
+[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/python-pptx.svg)](https://anaconda.org/conda-forge/python-pptx)
+[![Conda Version](https://img.shields.io/conda/vn/conda-forge/python-pptx.svg)](https://anaconda.org/conda-forge/python-pptx)
+[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/python-pptx.svg)](https://anaconda.org/conda-forge/python-pptx)
 
 Installing python-pptx
 ======================

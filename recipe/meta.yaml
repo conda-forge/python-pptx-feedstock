@@ -1,8 +1,8 @@
 {% set name = "python-pptx" %}
-{% set version = "0.6.7" %}
+{% set version = "0.6.8" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "c24f15a73a497f9efac6d06099138bfbfdd26ffbe1f36d43f3a2086e23695821" %}
+{% set hash_val = "6fbfd3c9b66864b2fd752a921a72262e7b5618e925d671a6b9105557c9c1f723" %}
 {% set build = 0 %}
 
 package:
@@ -16,7 +16,7 @@ source:
 
 build:
   noarch: python
-  number: {{ build }}
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:

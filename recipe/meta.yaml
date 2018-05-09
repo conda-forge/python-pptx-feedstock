@@ -1,8 +1,8 @@
 {% set name = "python-pptx" %}
-{% set version = "0.6.8" %}
+{% set version = "0.6.9" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "6fbfd3c9b66864b2fd752a921a72262e7b5618e925d671a6b9105557c9c1f723" %}
+{% set hash_val = "f1ceec0817ac947dc6fc5599581269693bcc32f666041440bd2ce2a35b40694b" %}
 {% set build = 0 %}
 
 package:

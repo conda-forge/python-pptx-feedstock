@@ -19,10 +19,10 @@ All platforms:
 
 Current release info
 ====================
-[![Conda Recipe](https://img.shields.io/badge/recipe-python--pptx-green.svg)](https://anaconda.org/conda-forge/python-pptx)
-[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/python-pptx.svg)](https://anaconda.org/conda-forge/python-pptx)
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/python-pptx.svg)](https://anaconda.org/conda-forge/python-pptx)
-[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/python-pptx.svg)](https://anaconda.org/conda-forge/python-pptx)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-python--pptx-green.svg)](https://anaconda.org/conda-forge/python-pptx) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/python-pptx.svg)](https://anaconda.org/conda-forge/python-pptx) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/python-pptx.svg)](https://anaconda.org/conda-forge/python-pptx) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/python-pptx.svg)](https://anaconda.org/conda-forge/python-pptx) |
 
 Installing python-pptx
 ======================

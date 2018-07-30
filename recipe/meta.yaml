@@ -1,28 +1,22 @@
-{% set name = "python-pptx" %}
 {% set version = "0.6.11" %}
-{% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_val = "b68b33e0e6cc3ea512c5711651a33f787f18869c3235f2a38b8e46f866bef164" %}
 
 package:
-  name: {{ name|lower }}
+  name: python-pptx
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash_val }}
+  url: https://pypi.org/packages/source/p/python-pptx/python-pptx-{{ version }}.tar.gz
+  sha256: b68b33e0e6cc3ea512c5711651a33f787f18869c3235f2a38b8e46f866bef164
 
 build:
-  noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   build:
     - python
     - pip
-
   run:
     - python
     - lxml >=3.1.0

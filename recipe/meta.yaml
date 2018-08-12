@@ -1,4 +1,4 @@
-{% set version = "0.6.11" %}
+{% set version = "0.6.12" %}
 
 package:
   name: python-pptx
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/python-pptx/python-pptx-{{ version }}.tar.gz
-  sha256: b68b33e0e6cc3ea512c5711651a33f787f18869c3235f2a38b8e46f866bef164
+  sha256: 52a30a02adad451a2a1f049087ec84c18c4ea0b0a7397490e6049acdd7d01a73
 
 build:
   number: 0

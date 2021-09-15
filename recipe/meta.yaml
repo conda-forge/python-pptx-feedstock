@@ -11,14 +11,14 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
-    - python
+    - python =2.7|>=3.6
     - pip
   run:
-    - python
+    - python =2.7|>=3.6
     - lxml >=3.1.0
     - pillow >=3.3.2
     - xlsxwriter >=0.5.7

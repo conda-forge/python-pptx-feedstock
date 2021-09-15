@@ -1,4 +1,4 @@
-{% set version = "0.6.18" %}
+{% set version = "0.6.20" %}
 
 package:
   name: python-pptx
@@ -6,19 +6,19 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/python-pptx/python-pptx-{{ version }}.tar.gz
-  sha256: a857d69e52d7e8a8fb32fca8182fdd4a3c68c689de8d4e4460e9b4a95efa7bc4
+  sha256: 89f0e66f433d4cf95c5234c37ad51dfa24b94358f7e6e0bea80617a32ad6ca47
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
-  build:
-    - python
+  host:
+    - python =2.7|>=3.6
     - pip
   run:
-    - python
+    - python =2.7|>=3.6
     - lxml >=3.1.0
     - pillow >=3.3.2
     - xlsxwriter >=0.5.7
@@ -45,7 +45,7 @@ about:
   license_file: LICENSE
   license: MIT
   license_family: MIT
-  summary: 'Generate and manipulate Open XML PowerPoint (.pptx) files'
+  summary: Generate and manipulate Open XML PowerPoint (.pptx) files
   dev_url: http://github.com/scanny/python-pptx
   doc_url: https://python-pptx.readthedocs.io
 

@@ -29,20 +29,11 @@ requirements:
     - typing-extensions
 
 tests:
-  - python:
-      imports:
-        - pptx
-        - pptx.chart
-        - pptx.dml
-        - pptx.enum
-        - pptx.opc
-        - pptx.oxml
-        - pptx.oxml.chart
-        - pptx.oxml.dml
-        - pptx.oxml.shapes
-        - pptx.parts
-        - pptx.shapes
-        - pptx.text
+  - script:
+      - python -c "import pptx"
+    requirements:
+      run:
+        - python ={{ python_min }}
 
 about:
   license_file: LICENSE

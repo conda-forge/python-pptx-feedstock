@@ -32,7 +32,6 @@ tests:
       imports:
         - pptx
         - pptx.chart
-        - pptx.compat
         - pptx.dml
         - pptx.enum
         - pptx.opc

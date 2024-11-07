@@ -1,0 +1,49 @@
+context:
+  version: 1.0.2
+  python_min: "3.9" # remove this line once https://github.com/prefix-dev/rattler-build/pull/1122 is available
+
+package:
+  name: python-pptx
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/p/python-pptx/python_pptx-${{ version }}.tar.gz
+  sha256: 479a8af0eaf0f0d76b6f00b0887732874ad2e3188230315290cd1f9dd9cc7095
+
+build:
+  number: 0
+  noarch: python
+  script: python -m pip install . -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}
+    - pip
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+    - lxml >=3.1.0
+    - pillow >=3.3.2
+    - xlsxwriter >=0.5.7
+    - libiconv
+    - typing-extensions
+
+tests:
+  - script:
+      - python -c "import pptx"
+    requirements:
+      run:
+        - python ${{ python_min }}
+
+about:
+  license_file: LICENSE
+  license: MIT
+  summary: Generate and manipulate Open XML PowerPoint (.pptx) files
+  homepage: http://github.com/scanny/python-pptx
+  repository: http://github.com/scanny/python-pptx
+  documentation: https://python-pptx.readthedocs.io
+
+extra:
+  recipe-maintainers:
+    - pmlandwehr
+    - synapticarbors

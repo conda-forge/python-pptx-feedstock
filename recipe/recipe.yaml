@@ -33,7 +33,7 @@ tests:
       - python -c "import pptx"
     requirements:
       run:
-        - python ={{ python_min }}
+        - python =${{ python_min }}
 
 about:
   license_file: LICENSE

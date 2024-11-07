@@ -1,5 +1,3 @@
-schema_version: 1
-
 context:
   version: 1.0.2
   python_min: "3.9" # remove this line once https://github.com/prefix-dev/rattler-build/pull/1122 is available

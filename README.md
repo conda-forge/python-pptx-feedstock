@@ -11,7 +11,7 @@ Summary: Generate and manipulate Open XML PowerPoint (.pptx) files
 
 Development: http://github.com/scanny/python-pptx
 
-Documentation: https://python-pptx.readthedocs.io
+Documentation: https://python-pptx.readthedocs.io/
 
 Current build status
 ====================

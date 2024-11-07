@@ -26,6 +26,7 @@ requirements:
     - pillow >=3.3.2
     - xlsxwriter >=0.5.7
     - libiconv
+    - typing-extensions
 
 tests:
   - python:

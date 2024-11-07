@@ -2,6 +2,7 @@ schema_version: 1
 
 context:
   version: 1.0.2
+  python_min: "3.9" # remove this line once https://github.com/prefix-dev/rattler-build/pull/1122 is available
 
 package:
   name: python-pptx
@@ -18,11 +19,11 @@ build:
 
 requirements:
   host:
-    - npython {{ python_min }}.*
+    - npython ${{ python_min }}.*
     - pip
     - setuptools
   run:
-    - python >={{ python_min }}
+    - python >=${{ python_min }}
     - lxml >=3.1.0
     - pillow >=3.3.2
     - xlsxwriter >=0.5.7
